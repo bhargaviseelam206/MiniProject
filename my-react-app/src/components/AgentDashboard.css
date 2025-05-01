@@ -1,0 +1,154 @@
+.agent-dashboard-container {
+  margin-top: 15px;
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #e6fff5;
+}
+
+
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  margin-top:60px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.sidebar button:hover,
+.sidebar .active {
+  background-color: #4736aa;
+  border-radius: 4px;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+ 
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding:40px;
+  justify-content: center; /* Center cards horizontally */
+}
+
+.donation-card {
+  width: 300px; /* Fixed width for consistent layout */
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,1,0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-label {
+  font-weight: bold;
+}
+
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* BUTTON STYLES */
+
+.accept-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pending-btn {
+  background-color: rgb(230, 175, 93);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.completed-btn {
+  background-color: #4cc953;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.revert-btn {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1c8c66 !important;
+  font-weight:bold;
+}
+.report-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.report-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}

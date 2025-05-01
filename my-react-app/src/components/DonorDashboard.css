@@ -1,0 +1,62 @@
+/* General container styles */
+.con2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./donor4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  
+  .bg_col {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+  }
+  
+  /* Food and Grocery donation sections with glass effect */
+  .food,
+  .grocery,
+  .girl-needs,
+  .medicines {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .foodhead,
+  .groceryhead ,
+  .girl-needs-head,
+  .medicines-head {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Button styles */
+  .bt {
+    margin-top: 15px;
+  }
+  
+  .btb {
+    background-color: #666699;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btb:hover {
+    background-color: #555588;
+  }
+  
+  

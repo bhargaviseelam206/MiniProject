@@ -1,0 +1,47 @@
+.hero-container {
+  background-image: url("./public/home3.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+  text-align: center;         
+  padding: 0 20px;
+  margin-top:75px;             
+  margin-bottom: 5px;
+}
+
+.hero-content {
+  color: black;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.hero-content button {
+  background-color: #007bff;
+  color: white;
+  font-size: 0.9rem;           /* slightly smaller text */
+  padding: 8px;           /* smaller button dimensions */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width:100px;
+}
+
+.hero-content button:hover {
+  background-color: #0056b3;
+}

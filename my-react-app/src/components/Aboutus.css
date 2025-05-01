@@ -1,0 +1,66 @@
+.about-us-section {
+    background-color: #e6fff5;
+    color: #333;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:30px;
+  }
+  
+  .about-us-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1c8c66;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .about-us-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-us-content {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .about-us-image-wrapper {
+    width: 100%;
+    flex: 1;
+  }
+  
+  .about-us-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 128, 96, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-us-image:hover {
+    transform: scale(1.03);
+  }
+  
+  .about-us-text {
+    padding: 0 1rem;
+    flex: 1;
+  }
+  
+  .about-us-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0c6b52;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+  

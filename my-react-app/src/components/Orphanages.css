@@ -1,0 +1,86 @@
+/* General Page Styling */
+.orphanages-page {
+    padding: 24px;
+    background-color: #f7fafc;
+  }
+  
+  /* Title Styling */
+  .orphanages-page h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #2f855a;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Orphanage Card Container (Horizontal Layout) */
+  .orphanage-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Individual Orphanage Card */
+  .orphanage-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease-in-out;
+    width: 300px; /* Fixed width for horizontal layout */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hover Effect for Cards */
+  .orphanage-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Image Styling */
+  .orphanage-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  /* Card Content Styling */
+  .orphanage-card .card-content {
+    padding: 16px;
+    flex: 1;
+  }
+  
+  .orphanage-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2f855a;
+    margin-bottom: 10px;
+  }
+  
+  .orphanage-card p {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 8px;
+  }
+  
+  .orphanage-card .donate-button {
+    background-color: #38a169;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .orphanage-card .donate-button:hover {
+    background-color: #2f855a;
+  }
+  

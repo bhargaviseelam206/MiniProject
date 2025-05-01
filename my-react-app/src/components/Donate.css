@@ -1,0 +1,17 @@
+/* Optional styles to enhance visuals */
+
+.card-image {
+  transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+  transform: scale(1.05);
+}
+
+button.custom-donate-button {
+  transition: all 0.3s ease;
+}
+
+button.custom-donate-button:hover {
+  box-shadow: 0 10px 15px rgba(34, 197, 94, 0.4);
+}

@@ -1,0 +1,59 @@
+.create-campaign-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-campaign-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .create-campaign-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .create-campaign-form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .create-campaign-form .form-group input,
+  .create-campaign-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .create-campaign-form .form-group textarea {
+    height: 120px;
+  }
+  
+  .create-campaign-form .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #666699;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .create-campaign-form .submit-btn:hover {
+    background-color: #555588;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
