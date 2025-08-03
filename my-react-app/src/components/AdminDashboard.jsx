@@ -9,7 +9,7 @@ const AdminDashboard = () => {
   const [donations, setDonations] = useState([]);
   const [feedbacks, setFeedbacks] = useState([]);
   const [campaigns, setCampaigns] = useState([]);
-  const [orphanageDonations, setOrphanageDonations] = useState([]); 
+  const [orphanageDonations, setOrphanageDonations] = useState([]);
   const [newAgent, setNewAgent] = useState({ username: "", email: "", password: "" });
   const [newDonor, setNewDonor] = useState({ username: "", email: "", password: "" });
 
@@ -48,12 +48,12 @@ const AdminDashboard = () => {
         });
         setCampaigns(response.data.campaigns);
       } else if (type === "orphanages") {
-       
+
         response = await axios.get("http://localhost:8080/admin/orphanage-donations", {
           headers: { Authorization: `Bearer ${token}` },
-       }); // No token needed here if not protected
-       setOrphanageDonations(response.data);
-       
+        }); // No token needed here if not protected
+        setOrphanageDonations(response.data);
+
       }
     } catch (error) {
       console.error(`Error fetching ${type}:`, error);
@@ -245,7 +245,7 @@ const AdminDashboard = () => {
         medicines: "./medicin.jpg",
         clothes: "./cloth.jpg",
         hygiene: "./hygene.jpg",
-        food:"./image3.jpg"
+        food: "./image3.jpg"
       };
 
       return donations.map((donation, index) => (
@@ -255,7 +255,7 @@ const AdminDashboard = () => {
             alt={donation.typeOfFood}
             style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px' }}
           />
-          <h3 style={{color:"#2c3e50",fontWeight:"bold"}}>{donation.name}</h3>
+          <h3 style={{ color: "#2c3e50", fontWeight: "bold" }}>{donation.name}</h3>
           <p>Type: {donation.typeOfFood}</p>
           <p>Quantity: {donation.quantity}</p>
           <p>Address: {donation.address}</p>
@@ -264,7 +264,7 @@ const AdminDashboard = () => {
     } else if (activeTab === "orphanages") {
       return (
         <div className="orphanage-section">
-          
+
           <div className="orphanage-list-container">
             {orphanageDonations.length === 0 ? (
               <p>No orphanage donations available.</p>
