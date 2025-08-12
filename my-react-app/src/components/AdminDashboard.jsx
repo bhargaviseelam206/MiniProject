@@ -163,7 +163,7 @@ const AdminDashboard = () => {
             </tbody>
           </table>
 
-          {/* Add New Donor Form */}
+          {/* Add New Donor Form  with responsive*/}
           <div className="add-agent-form" style={{ marginLeft: "120px" }}>
             <h4>Add New Donor</h4>
             <input
